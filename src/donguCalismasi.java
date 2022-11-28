@@ -10,7 +10,7 @@ public class donguCalismasi {
         sayi=input.nextInt();
        for(i=0;i<=sayi;i++)
        {
-           if(i%3==0||i %4==0){
+           if(i%3==0 && i%4==0){
                if(i==0)
                {
                    continue;
@@ -22,12 +22,18 @@ public class donguCalismasi {
 
        }
        }
+       if(adet==0)
+       {
+           System.out.println("3 ve 4 e bölünenen sayı yok");
+       }
+       else
+       {
         ortalama=(toplam/adet);
         System.out.println("Adetleri.:"+adet);
         System.out.println("Toplamları.:"+toplam);
         System.out.println("ortalaması.:"+ortalama);
 
-
+       }
     }
 }
 
